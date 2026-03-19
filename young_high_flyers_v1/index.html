@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Young High Flyers</title>
+  <meta name="description" content="Discover extraordinary young achievers across science, business, sport, arts, and activism." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero">
+      <nav class="topbar container">
+        <div class="brand">Young High Flyers</div>
+        <div class="nav-links">
+          <a href="#profiles">Profiles</a>
+          <a href="#resources">Resources</a>
+          <a href="#about">About</a>
+        </div>
+      </nav>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow">A curated gallery of exceptional youth achievement</div>
+          <h1>Meet the young people who did something extraordinary.</h1>
+          <p>Explore standout stories across science, business, sport, arts, and activism. Filter the collection, search by name, achievement, or insight, and sort by age, year, or rank.</p>
+          <div class="hero-stats">
+            <div><strong id="statProfiles">75</strong><span>Profiles</span></div>
+            <div><strong>5</strong><span>Core categories</span></div>
+            <div><strong>75</strong><span>Why-it-matters insights</span></div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="hero.png" alt="Young High Flyers hero illustration" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls-wrap" id="profiles">
+        <div class="container controls-card">
+          <div class="search-row">
+            <input id="searchInput" type="search" placeholder="Search by name, achievement, country, or insight…" />
+            <select id="sortSelect">
+              <option value="rank-asc">Sort: Rank</option>
+              <option value="age-asc">Age: Youngest first</option>
+              <option value="age-desc">Age: Oldest first</option>
+              <option value="year-desc">Year: Newest first</option>
+              <option value="year-asc">Year: Oldest first</option>
+              <option value="name-asc">Name: A–Z</option>
+            </select>
+          </div>
+          <div class="chip-row" id="categoryChips"></div>
+          <div class="toggle-row">
+            <button class="toggle active" data-scope="all">All</button>
+            <button class="toggle" data-scope="featured">Top 50</button>
+            <button class="toggle" data-scope="bench">Bench 25</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section-head">
+        <div>
+          <div class="eyebrow">Collection</div>
+          <h2>Profiles</h2>
+        </div>
+        <div class="results-meta"><span id="resultsCount">0</span> results</div>
+      </section>
+
+      <section class="container cards-grid" id="cardsGrid"></section>
+
+      <section class="container resources" id="resources">
+        <div class="section-head section-head-inline">
+          <div>
+            <div class="eyebrow">Source material</div>
+            <h2>Featured resources</h2>
+          </div>
+        </div>
+        <div class="resource-list" id="resourceList"></div>
+      </section>
+
+      <section class="container about" id="about">
+        <div class="about-card">
+          <div>
+            <div class="eyebrow">Why this matters</div>
+            <h2>Young High Flyers is built to surface stories worth studying, not just admiring.</h2>
+          </div>
+          <p>Each profile highlights the achievement, the age, the context, and a practical insight on why it matters. Some entries are inspiring, some cautionary, and all are designed to spark research, writing, or curriculum ideas.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <template id="cardTemplate">
+    <article class="card">
+      <div class="portrait-wrap"><img class="portrait" alt="" loading="lazy"></div>
+      <div class="card-body">
+        <div class="meta-row">
+          <span class="pill category-pill"></span>
+          <span class="pill tone-pill"></span>
+        </div>
+        <h3 class="card-name"></h3>
+        <div class="submeta"></div>
+        <p class="achievement"></p>
+        <div class="why-box">
+          <div class="why-label">Why it matters</div>
+          <p class="why-text"></p>
+        </div>
+      </div>
+    </article>
+  </template>
+  <script src="app.js"></script>
+</body>
+</html>
