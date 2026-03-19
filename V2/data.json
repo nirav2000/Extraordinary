@@ -1,0 +1,32 @@
+[
+  {
+    "name": "David Hahn",
+    "category": "Science",
+    "why": "Curiosity pushed beyond safe limits",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/3e/David_Hahn.jpg"
+  },
+  {
+    "name": "Greta Thunberg",
+    "category": "Activism",
+    "why": "One voice can spark a global movement",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Greta_Thunberg_2019.jpg"
+  },
+  {
+    "name": "Taylor Wilson",
+    "category": "Science",
+    "why": "Structured curiosity leads to real breakthroughs",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Taylor_Wilson.jpg"
+  },
+  {
+    "name": "Nick D'Aloisio",
+    "category": "Entrepreneurship",
+    "why": "Simple ideas executed well can scale fast",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Nick_DAloisio.jpg"
+  },
+  {
+    "name": "Boyan Slat",
+    "category": "Impact",
+    "why": "Spotting global problems early creates leverage",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Boyan_Slat_2016.jpg"
+  }
+]
